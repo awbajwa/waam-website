@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>24/7 Coworking Space near Gulberg Greens, Islamabad | Waam Technology &amp; Business Park</title>
-<meta name="description" content="Hot desks for PKR 15,000 a month at Waam Technology & Business Park, near Gulberg Greens, Islamabad. Open 24/7 with fast internet, backup generator, AC rooms, parking and a prayer area. Book a tour on WhatsApp.">
+<meta name="description" content="Hot desks for PKR 15,000 a month at Waam Technology & Business Park, near Gulberg Greens, Islamabad. Open 24/7 with fast internet, backup generator, AC rooms, cafeteria, sports facilities, parking and a prayer area. Book a tour on WhatsApp.">
 <link rel="canonical" href="https://waamtechnologypark.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Waam Technology & Business Park | 24/7 coworking in Islamabad">
@@ -46,7 +46,9 @@
     {"@type": "LocationFeatureSpecification", "name": "High-speed internet", "value": true},
     {"@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true},
     {"@type": "LocationFeatureSpecification", "name": "Parking", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Prayer area", "value": true}
+    {"@type": "LocationFeatureSpecification", "name": "Prayer area", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Cafeteria", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Sports facilities", "value": true}
   ],
   "sameAs": [
     "https://www.instagram.com/waamtechnologypark/",
@@ -227,7 +229,7 @@
 
   /* Amenities */
   .amenities-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr);
+    display: grid; grid-template-columns: repeat(4, 1fr);
     gap: 0; border-radius: 24px; overflow: hidden;
     border: 1px solid var(--line); background: var(--line);
   }
@@ -290,6 +292,7 @@
     background: rgba(255,255,255,0.94); color: var(--navy);
     font-size: 0.9rem; font-weight: 600; padding: 7px 12px; border-radius: 999px;
   }
+  .gallery-note { margin-top: 16px; font-size: 0.9rem; color: var(--muted); }
   /* Shown only until a real photo is uploaded */
   .ph {
     width: 100%; height: 100%;
@@ -303,7 +306,7 @@
   @media (max-width: 760px) {
     .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 260px 180px 180px; }
     .gallery-grid figure:first-child { grid-column: 1 / -1; grid-row: auto; }
-    .gallery-grid figure:last-child { grid-column: 1 / -1; }
+    .gallery-grid figcaption { font-size: 0.82rem; left: 10px; bottom: 10px; }
   }
 
   /* Location */
@@ -511,6 +514,16 @@
           <h3>Prayer area</h3>
           <p>A clean, quiet space for namaz, right on site.</p>
         </div>
+        <div class="amenity">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h13v5a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6V9Z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8 2.5c0 1.5 1 1.5 1 3M12 2.5c0 1.5 1 1.5 1 3"/></svg>
+          <h3>Cafeteria</h3>
+          <p>Grab a meal, a chai or a coffee without leaving the building.</p>
+        </div>
+        <div class="amenity">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m12 7 4 3-1.5 4.5h-5L8 10l4-3Z"/><path d="M12 3v4M16 10l4.5-1.5M14.5 14.5 17 19M9.5 14.5 7 19M8 10 3.5 8.5"/></svg>
+          <h3>Sports facilities</h3>
+          <p>Step away from the screen, play a game and come back with a clear head.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -534,6 +547,7 @@
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Backup generator during load-shedding</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Air-conditioned rooms</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Parking and prayer area</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Cafeteria and sports facilities on site</li>
           </ul>
           <a class="btn btn-red" data-wa="desk" href="https://wa.me/923305978266" target="_blank" rel="noopener">
             <svg aria-hidden="true"><use href="#i-wa"/></svg>Reserve a desk on WhatsApp
@@ -585,9 +599,9 @@
   </section>
 
   <!-- GALLERY
-       To show your photos: create a folder called "images" in your GitHub repository
-       and upload photos named space-1.jpg, space-2.jpg, space-3.jpg, space-4.jpg and space-5.jpg.
-       They appear here automatically. Until then, a branded placeholder is shown. -->
+       To swap in real photos: upload your own photos to the "images" folder on GitHub with the
+       same names (space-1.jpg to space-5.jpg). They replace these automatically.
+       Once they are real photos, delete the "Images are illustrative" line below. -->
   <section class="block" aria-labelledby="gallery-title">
     <div class="wrap">
       <div class="block-head gallery-head">
@@ -598,12 +612,13 @@
         <a class="btn btn-ghost" href="https://www.instagram.com/waamtechnologypark/" target="_blank" rel="noopener">See more on Instagram</a>
       </div>
       <div class="gallery-grid">
-        <figure><img src="images/space-1.jpg" alt="The shared workspace at Waam" loading="lazy"><div class="ph" aria-hidden="true"></div><figcaption>Shared workspace</figcaption></figure>
-        <figure><img src="images/space-2.jpg" alt="Hot desks at Waam" loading="lazy"><div class="ph" aria-hidden="true"></div><figcaption>Hot desks</figcaption></figure>
-        <figure><img src="images/space-3.jpg" alt="Air-conditioned room at Waam" loading="lazy"><div class="ph" aria-hidden="true"></div><figcaption>AC rooms</figcaption></figure>
-        <figure><img src="images/space-4.jpg" alt="Prayer area at Waam" loading="lazy"><div class="ph" aria-hidden="true"></div><figcaption>Prayer area</figcaption></figure>
-        <figure><img src="images/space-5.jpg" alt="Parking at Waam" loading="lazy"><div class="ph" aria-hidden="true"></div><figcaption>Parking</figcaption></figure>
+        <figure><img src="images/space-1.jpg" alt="Shared workspace with long desks and large windows" loading="lazy"><div class="ph" aria-hidden="true"></div><figcaption>Shared workspace</figcaption></figure>
+        <figure><img src="images/space-2.jpg" alt="A member on a late-night video call at a hot desk" loading="lazy"><div class="ph" aria-hidden="true"></div><figcaption>Hot desks</figcaption></figure>
+        <figure><img src="images/space-3.jpg" alt="Cafeteria with coffee counter and tables" loading="lazy"><div class="ph" aria-hidden="true"></div><figcaption>Cafeteria</figcaption></figure>
+        <figure><img src="images/space-4.jpg" alt="Sports room with table tennis, foosball and snooker" loading="lazy"><div class="ph" aria-hidden="true"></div><figcaption>Sports facilities</figcaption></figure>
+        <figure><img src="images/space-5.jpg" alt="Quiet prayer area with prayer mats" loading="lazy"><div class="ph" aria-hidden="true"></div><figcaption>Prayer area</figcaption></figure>
       </div>
+      <p class="gallery-note">Images are illustrative. Book a tour to see the real space.</p>
     </div>
   </section>
 
@@ -646,7 +661,7 @@
         </details>
         <details>
           <summary>What do I get for PKR 15,000 a month?<span class="plus" aria-hidden="true"></span></summary>
-          <p>A hot desk in the shared workspace with 24/7 access, fast internet, generator backup, air conditioning, parking and use of the prayer area.</p>
+          <p>A hot desk in the shared workspace with 24/7 access, fast internet, generator backup, air conditioning, parking, the prayer area, and the cafeteria and sports facilities on site.</p>
         </details>
         <details>
           <summary>What is a hot desk?<span class="plus" aria-hidden="true"></span></summary>
